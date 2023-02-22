@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Master</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <h1 class="text-4xl text-center font-bold text-cyan-400 my-4">Money Master</h1>
+    <div class="grid grid-cols-2 w-11/12 mb-4 mx-auto gap-4">
+        <div><img src="assets/money.png" alt="" class="rounded-lg mx-auto h-full"></div>
+        <div class="bg-slate-100 rounded-lg px-16 mx-auto">
+            <div>
+                <h3 class="text-center font-bold my-2">Income</h3>
+                <div class="grid grid-cols-3 gap-2">
+                    <p class="text-right inline m-2">Income:</p>
+                    <input id="income" class= "col-span-2 bg-slate-300 rounded-md text-center p-2" type="text" name="" value="0">
+                </div>
+                <div>
+                    <h3 class="text-center font-bold my-2">Expenses</h3>
+                    <div class="grid grid-cols-3 gap-2">
+                        <p class="text-right inline m-2">Food:</p>
+                        <input id="food" class= "col-span-2 bg-slate-300 rounded-md text-center p-2" type="text" name="" value="0">
+                    </div>
+                    <div class="grid grid-cols-3 gap-2 my-2">
+                        <p class="text-right inline m-2">Rent:</p>
+                        <input id="rent" class= "col-span-2 bg-slate-300 rounded-md text-center p-2" type="text" name="" value="0">
+                    </div>
+                    <div class="grid grid-cols-3 gap-2">
+                        <p class="text-right inline m-2">Clothes:</p>
+                        <input id="cloth" class= "col-span-2 bg-slate-300 rounded-md text-center p-2" type="text" name="" value="0">
+                    </div>
+                </div>
+            </div>
+            <div class="text-center my-4">
+                <button id="btn-calculate" class="bg-sky-600 hover:bg-sky-700 px-16 py-3 rounded-lg text-white font-medium">Calculate</button>
+                <h3 class="text-center font-bold my-4">Total Expenses: <span id="total-cost"></span></h3>
+                <h3 class="text-center font-bold my-4">Balance: <span id="balance"></span></h3>
+            </div>
+            <div class="my-6 inline">
+                <div class="text-center">
+                    <p class="text-right inline m-2">Save:</p>
+                    <input id="save-percent" class= "bg-slate-300 rounded-md text-center p-2" type="text" name="" value="0" style="width: 50px;" >
+                    <p class="text-right inline m-2">%</p>
+                    <button id="btn-save" class="bg-sky-600 hover:bg-sky-700 px-4 py-2 rounded-lg text-white font-medium">Save</button>
+                </div>
+                <h3 class="text-center font-bold my-4">Savings Amount: <span id="save-amount"></span></h3>
+                <h3 class="text-center font-bold my-4">Remaining Balance: <span id="remaining-balance"></span></h3>
+            </div>
+        </div>
+    </div>
+    <script src="utility.js"></script>
+    <script src="money-master.js"></script>
+</body>
+</html>
